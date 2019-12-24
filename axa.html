@@ -79,22 +79,22 @@
         <!--input information 4 wheels below-->
         <div class="container col-md-6">
             <form class=""
-                style="background-color: whitesmoke; border: black solid thin; border-radius: 10px; padding: 10px; ">
+                style="background-color: whitesmoke; border: black solid thin; border-radius: 10px; padding: 10px; " id="formSubmit" action="fourwheels_price.html">
                 <h2><strong> Car's estimating insurance fee!</strong></h2>
                 <br><br>
                 <label>Car's price:</label>
                 <br>
-                <input type="text" required> &nbsp;million VNĐ
+                <input type="text" required id="carPrice" value="500"> &nbsp;million VNĐ
                 <br><br>
                 <label>Year of production:</label>
                 <br>
                 <input type="radio" value="2019" name="namsx" required>2019
                 &nbsp;
-                <input type="radio" value="2019" name="namsx">2018
+                <input type="radio" value="2018" name="namsx">2018
                 &nbsp;
-                <input type="radio" value="2019" name="namsx">2017
+                <input type="radio" value="2017" name="namsx">2017
                 &nbsp;
-                <input type="radio" value="2019" name="namsx">2016
+                <input type="radio" value="2016" name="namsx">2016
                 &nbsp;
                 <input type="radio" value="2019" name="namsx">2015
                 &nbsp;
@@ -112,7 +112,7 @@
                 <br>
                 <input type="textarea" required>
                 <br><br>
-                <button class="btn btn-danger" id="btnFoursAxa">Estimate insurance fee</button>
+                <button type="submit" class="btn btn-danger" id="btnFoursAxa">Estimate insurance fee</button>
             </form>
         </div>
         <!--input information 2 wheels below-->
@@ -250,12 +250,7 @@
         </div>
     </footer>
 
-    <script>
-        $("#btnFoursAxa").on("click",function {
-            
-
-        })
-    </script>
+    
 </body>
 
 
