@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h2>Load () Ajax demo</h2>
+        </div>
+        <div class="row">
+            <!--Khoi chua button-->
+            <div class="col-md-3" style="background-color: red; height: 300px;">
+                <button id="btLoadBG" class="btn btn-danger">Load bang bao gia</button>
+                <br>
+                <button id="btLoadHI" class="btn btn-info">Load hinh anh</button>
+            </div>
+            <div class="col-md-9" id="content" style="background-color: blue; height:300px">
+                
+            </div>
+
+        </div>
+    </div>
+    <script>
+    $(document).ready(function(){
+        $("#btLoadBG").on("click", function(){
+            $("#content").load("d04_list.html");
+        });
+    })
+    </script>
+</body>
+
+</html>

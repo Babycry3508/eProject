@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        table {
+            border: solid black thin;
+            margin: 20px;
+        }
+
+        td {
+            width: 200px;
+            border: solid black thin;
+            padding: 5px;
+        }
+
+        #click {
+            margin: 20px;
+            float: center;
+        }
+
+        #trum {
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="trum">
+        <table>
+            <thead>Jquery: table</thead>
+            <tr>
+                <td>ID</td>
+                <td>Name</td>
+            </tr>
+            <tr id="tr:odd">
+                <td>s01</td>
+                <td>Thanh Dien</td>
+            </tr>
+            <tr>
+                <td>s02</td>
+                <td>Thanh Kim Hue</td>
+            </tr>
+            <tr id="tr:odd">
+                <td>s03</td>
+                <td>Thanh Thanh</td>
+            </tr>
+        </table>
+        <button id="click">Click</button>
+    </div>
+
+    <script>
+         alert("bum");
+        $("#click").click(function () {
+           
+            $("#tr:odd").css('color-blackground', 'lightblue');
+        });
+    </script>
+</body>
+
+</html>

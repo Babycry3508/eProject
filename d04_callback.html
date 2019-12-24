@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Call back</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h2>Callback demo</h2>
+        </div>
+    </div>
+    <div  class="panel-body">
+        <button id="btHide" class="btn btn-danger">Hide image</button>
+        <br>
+        <img src="images/44834655225_6238cb3c9d_b.jpg">
+
+
+    </div>
+    <script>
+    $(document).ready(function(){
+        
+        $("#btHide").on("click", function(){
+           
+            $("img").toggle(300, function(){alert("hoho");});
+        })
+    });
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>on/off</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header">
+            on () / off () event delegate demo
+        </div>
+    </div>
+
+    <div>
+        <button id="btAdd" class="btn btn-info">Add new item</button>
+        <button id="btRemove" class="btn btn-danger">Remove</button>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("li").on("click", function () {
+                alert("click me!");
+            }); 
+            $("#btRemove").on("click", function () {
+               
+                //huy cac trinh xu ly su kien tren item
+                $("li").off("click");
+               
+
+            });
+
+
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h2>JSON demo</h2>
+            <button value="but" id="btLOAD" >Nut nut</button>
+        </div>
+        <div id="main">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit minima qui ipsum sit neque doloremque repellat, nisi architecto maxime, eligendi suscipit nostrum excepturi molestiae sunt pariatur fugit delectus a. Sed?</p>
+        </div>
+    </div>
+    <script>
+    $(document).ready(function(){
+        
+        //khai bao mot mang json chau danh sach sinh vien
+        var list = [
+            {"id": "ST1", "name": "Duong", "tel": "12"},
+            {"id": "ST2", "name": "Duon", "tel": "1"},
+            {"id": "ST3", "name": "Duo", "tel": "1234"},
+            {"id": "ST4", "name": "Du", "tel": "12345"}
+        ];
+        
+        //lap trinh cho su kien button load
+        $("#btLOAD").click(function(){
+            var dsTen = [];
+            list.forEach(item => {
+                dsTen.push(item.name);
+            });
+            $("p").text(dsTen.join(", "));
+
+
+        });
+    });
+    </script>
+</body>
+</html>

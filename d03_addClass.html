@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .cool {
+            background-color: beige;
+            width: 300px;
+            height: 150px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>jquery</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iusto impedit molestiae quibusdam dicta beatae sapiente qui assumenda voluptas dolor? Distinctio minus atque vitae? Animi pariatur consectetur facilis omnis excepturi.</p>
+<input type="button" id="id-button" value="Change"/>
+
+<script language="javascript">
+$("#id-button").click(function(){
+    $('p').addClass('cool');
+    $('p').toggle();
+});
+</script>
+
+    </div>
+</body>
+</html>
