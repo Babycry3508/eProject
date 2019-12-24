@@ -55,7 +55,8 @@
     <div class="jumbotron" style="background-color: lightskyblue;">
         <div class="row">
             <div class="container col-md-1"></div>
-            <div class="container info col-md-10" style="background-color: whitesmoke; border: black solid thin; border-radius: 10px; padding: 10px; ">
+            <div class="container info col-md-10"
+                style="background-color: whitesmoke; border: black solid thin; border-radius: 10px; padding: 10px; ">
                 <h2><strong> GENERAL INFORMATION ABOUT THE CORPORATION</strong></h2>
                 <p>
                     - Corporation name: AXA.
@@ -67,7 +68,8 @@
                     <br>
                     - Phone: (024) 6276 5555 - Fax: (024) 6276 5556.
                     <br>
-                    - Axa is a French multinational insurance firm headquartered in the 8th arrondissement of Paris that engages in global insurance, investment management, and other financial services.
+                    - Axa is a French multinational insurance firm headquartered in the 8th arrondissement of Paris that
+                    engages in global insurance, investment management, and other financial services.
                 </p>
             </div>
             <div class="col-md-1"></div>
@@ -76,16 +78,17 @@
     <div class="container-fluid">
         <!--input information 4 wheels below-->
         <div class="container col-md-6">
-            <form class="" style="background-color: whitesmoke; border: black solid thin; border-radius: 10px; padding: 10px; ">
+            <form class=""
+                style="background-color: whitesmoke; border: black solid thin; border-radius: 10px; padding: 10px; ">
                 <h2><strong> Car's estimating insurance fee!</strong></h2>
                 <br><br>
                 <label>Car's price:</label>
                 <br>
-                <input type="text" required > &nbsp;million VNĐ
+                <input type="text" required> &nbsp;million VNĐ
                 <br><br>
                 <label>Year of production:</label>
                 <br>
-                <input type="radio" value="2019" name="namsx" required >2019
+                <input type="radio" value="2019" name="namsx" required>2019
                 &nbsp;
                 <input type="radio" value="2019" name="namsx">2018
                 &nbsp;
@@ -107,19 +110,20 @@
                 <br><br>
                 <label>Enter phone number:</label>
                 <br>
-                <input type="textarea" required >
+                <input type="textarea" required>
                 <br><br>
-                <button class="btn btn-danger">Estimate insurance fee</button>
+                <button class="btn btn-danger" id="btnFoursAxa">Estimate insurance fee</button>
             </form>
         </div>
         <!--input information 2 wheels below-->
         <div class="container col-md-6">
-            <form class="" style="background-color: whitesmoke; border: black solid thin; border-radius: 10px; padding: 10px; ">
+            <form class=""
+                style="background-color: whitesmoke; border: black solid thin; border-radius: 10px; padding: 10px; ">
                 <h2><strong> Moto's estimating insurance fee!</strong></h2>
                 <br><br>
                 <label>Moto's cylinder capacity:</label>
                 <br>
-                <input type="radio" value="50" name="namsx" required >50 cc
+                <input type="radio" value="50" name="namsx" required>50 cc
                 &nbsp;
                 <input type="radio" value="100" name="namsx">100 cc
                 &nbsp;
@@ -137,7 +141,7 @@
                 <br><br>
                 <label>Year of production:</label>
                 <br>
-                <input type="radio" value="2019" name="namsx" required >2019
+                <input type="radio" value="2019" name="namsx" required>2019
                 &nbsp;
                 <input type="radio" value="2019" name="namsx">2018
                 &nbsp;
@@ -159,11 +163,48 @@
                 <br><br>
                 <label>Enter phone number:</label>
                 <br>
-                <input type="textarea" required >
+                <input type="textarea" required>
                 <br><br>
                 <button class="btn btn-danger">Estimate insurance fee</button>
             </form>
         </div>
+    </div>
+    <div class="container-fluid row " style="background-color: lightskyblue;">
+        
+        <div class="col-md-6" id="foursAxa"></div>
+        <div class="col-md-6"
+            style="background-color: whitesmoke; border: rgb(188, 216, 188) thin solid; border-radius: 5px; margin: 20px;padding-bottom: 20px;">
+            <table>
+                <tr>
+                    <td><img src="berkshire_logo.jpg"></td>
+                    <td>
+                        <h2>&nbsp;&nbsp;BERKSHIRE - HATHAWAY</h2>
+                    </td>
+                </tr>
+            </table>
+            <label>Total fee all in one:</label>
+            <ul>
+                <li>New replacement insurance does not calculate depreciation</li>
+                <li>Insurance for damage caused by hydroelectricity</li>
+                <li>Insurance repair at Safecarz.</li>
+                <li>Not applicable for Transport business vehicles, Taxis, Technology taxis, ..</li>
+            </ul>
+            <div class="container">
+                <label>Promotion:</label>
+                <ul>
+                    <li>10% discount on premiums.</li>
+                    <li>30% off Ceramic coating.</li>
+                    <li>30% off for other services at Safecarz Car Beauty Center.</li>
+                    <li>15% off maintenance + Free oil change & Free car wash.</li>
+                </ul>
+            </div>
+            <div style="text-align: center;">
+                <h2 style="text-align: center;">Price: </h2>
+                <p style="text-align: center;"><strike>(67.500.000 đ)</strike></p>
+                <button class="btn btn-danger" style="display: inline;">Hotline: 1800 6216 (free)</button>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
     </div>
     <!--What our customers say-->
     <div class="container-fluid">
@@ -244,6 +285,14 @@
 
         </div>
     </footer>
+
+    <script>
+        $(document).ready(function () {
+            $("#btnFoursAxa").on("click", function () {
+                $("#foursAxa").load("fourwheels_axa.html");
+            });
+        })
+    </script>
 </body>
 
 
