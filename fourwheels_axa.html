@@ -1,68 +1,43 @@
 <div class="container-fluid row " style="background-color: lightskyblue;">
     
-    <div class="col-md-6"
-        style="background-color: whitesmoke; border: rgb(188, 216, 188) thin solid; border-radius: 5px; margin: 20px;padding-bottom: 20px;">
-        <table>
-            <tr>
-                <td><img src="axa-logo.jpg"></td>
-                <td>
-                    <h2>&nbsp;&nbsp;AXA INSURANCE</h2>
-                </td>
-            </tr>
-        </table>
-        <label>Total fee all in one:</label>
-        <ul>
-            <li>New replacement insurance does not calculate depreciation</li>
-            <li>Insurance for damage caused by hydroelectricity</li>
-            <li>Insurance repair at Safecarz.</li>
-            <li>Not applicable for Transport business vehicles, Taxis, Technology taxis, ..</li>
-        </ul>
-        <div class="container">
-            <label>Promotion:</label>
-            <ul>
-                <li>10% discount on premiums.</li>
-                <li>30% off Ceramic coating.</li>
-                <li>30% off for other services at Safecarz Car Beauty Center.</li>
-                <li>15% off maintenance + Free oil change & Free car wash.</li>
-            </ul>
-        </div>
-        <div style="text-align: center;">
-            <h2 style="text-align: center;">Price: </h2>
-            <p style="text-align: center;"><strike>(67.500.000 đ)</strike></p>
-            <button class="btn btn-danger" style="display: inline;">Hotline: 1800 6216 (free)</button>
-        </div>
-    </div>
-    <div class="col-md-6"
-        style="background-color: whitesmoke; border: rgb(188, 216, 188) thin solid; border-radius: 5px; margin: 20px;padding-bottom: 20px;">
-        <table>
-            <tr>
-                <td><img src="berkshire_logo.jpg"></td>
-                <td>
-                    <h2>&nbsp;&nbsp;BERKSHIRE - HATHAWAY</h2>
-                </td>
-            </tr>
-        </table>
-        <label>Total fee all in one:</label>
-        <ul>
-            <li>New replacement insurance does not calculate depreciation</li>
-            <li>Insurance for damage caused by hydroelectricity</li>
-            <li>Insurance repair at Safecarz.</li>
-            <li>Not applicable for Transport business vehicles, Taxis, Technology taxis, ..</li>
-        </ul>
-        <div class="container">
-            <label>Promotion:</label>
-            <ul>
-                <li>10% discount on premiums.</li>
-                <li>30% off Ceramic coating.</li>
-                <li>30% off for other services at Safecarz Car Beauty Center.</li>
-                <li>15% off maintenance + Free oil change & Free car wash.</li>
-            </ul>
-        </div>
-        <div style="text-align: center;">
-            <h2 style="text-align: center;">Price: </h2>
-            <p style="text-align: center;"><strike>(67.500.000 đ)</strike></p>
-            <button class="btn btn-danger" style="display: inline;">Hotline: 1800 6216 (free)</button>
-        </div>
-    </div>
+    <div class="col-md-4"
+                style="background-color: whitesmoke; border: rgb(188, 216, 188) thin solid; border-radius: 5px; margin: 20px;padding-bottom: 20px;">
+                <table>
+                    <tr>
+                        <td><img src="axa-logo.jpg"></td>
+                        <td>
+                            <h2 class="tencty">&nbsp;&nbsp;AXA INSURANCE</h2>
+                        </td>
+                    </tr>
+                </table>
+                <label>Total fee all in one:</label>
+                <ul>
+                    <li>New replacement insurance does not calculate depreciation</li>
+                    <li>Insurance for damage caused by hydroelectricity</li>
+                    <li>Insurance repair at Safecarz.</li>
+                    <li>Not applicable for Transport business vehicles, Taxis, Technology taxis, ..</li>
+                </ul>
+                <div class="container">
+                    <label>Promotion:</label>
+                    <ul>
+                        <li>10% discount on premiums.</li>
+                        <li>30% off Ceramic coating.</li>
+                        <li>30% off for other services at Safecarz Car Beauty Center.</li>
+                        <li>15% off maintenance + Free oil change & Free car wash.</li>
+                    </ul>
+                </div>
+                <div style="text-align: center;">
+                    <h2 class="discount">Price: 
+                        <script>
+                            document.write(localStorage.getItem("gia1"));
+                            </script> USD
+                    </h2>
+                    <p style="text-align: center;"><strike><script>
+                    var x4 = parseInt(localStorage.getItem("gia1")) * 1.3;
+                    document.write("(" + x4 +" USD)");
+                   </script> </strike></p>
+                    <button class="btn btn-danger" style="display: inline;">Hotline: 1800 6216 (free)</button>
+                </div>
+            </div>
    
 </div>

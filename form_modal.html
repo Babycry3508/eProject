@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="eProject.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+
+    <form class="form-inline" onsubmit="openModal()" id="myForm" style="background-color: whitesmoke; border: black solid thin; border-radius: 10px; padding: 10px; ">
+        <h2><strong> Car's estimating insurance fee!</strong></h2>
+        <br><br>
+        <label>Car's price:</label>
+        <br>
+        <input type="text" required id="carPrice"> &nbsp;million VNĐ
+        <br><br>
+        <label>Year of production:</label>
+        <br>
+        <input type="radio" value="1" name="namsx" required>2019
+        &nbsp;
+        <input type="radio" value="1.1" name="namsx">2018
+        &nbsp;
+        <input type="radio" value="1.2" name="namsx">2017
+        &nbsp;
+        <input type="radio" value="1.3" name="namsx">2016
+        &nbsp;
+        <input type="radio" value="1.4" name="namsx">2015
+        &nbsp;
+        <input type="radio" value="1.5" name="namsx">2014
+        &nbsp;
+        <input type="radio" value="1.6" name="namsx">2013
+        &nbsp;
+        <input type="radio" value="1.7" name="namsx">2012
+        &nbsp;
+        <input type="radio" value="1.8" name="namsx">2011
+        &nbsp;
+        <input type="radio" value="1.9" name="namsx">Before 2011
+        <br><br>
+        <label>Enter phone number:</label>
+        <br>
+        <input type="textarea" required>
+        <br><br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid row " style="background-color: lightskyblue;">
+
+                        <div
+                            style="background-color: whitesmoke; border: rgb(188, 216, 188) thin solid; border-radius: 5px; margin: 20px;padding-bottom: 20px;">
+                            <table>
+                                <tr>
+                                    <td><img src="axa-logo.jpg"></td>
+                                    <td>
+                                        <h2 class="tencty">&nbsp;&nbsp;AXA INSURANCE</h2>
+                                    </td>
+                                </tr>
+                            </table>
+                            <label>Total fee all in one:</label>
+                            <ul>
+                                <li>New replacement insurance does not calculate depreciation</li>
+                                <li>Insurance for damage caused by hydroelectricity</li>
+                                <li>Insurance repair at Safecarz.</li>
+                                <li>Not applicable for Transport business vehicles, Taxis, Technology taxis,
+                                    ..</li>
+                            </ul>
+                            <div class="container">
+                                <label>Promotion:</label>
+                                <ul>
+                                    <li>10% discount on premiums.</li>
+                                    <li>30% off Ceramic coating.</li>
+                                    <li>30% off for other services at Safecarz Car Beauty Center.</li>
+                                    <li>15% off maintenance + Free oil change & Free car wash.</li>
+                                </ul>
+                            </div>
+                            <div style="text-align: center;">
+                                <h2 class="discount">Price:
+                                    <script>
+                                        document.write(localStorage.getItem("otogia1"));
+                                    </script> USD
+                                </h2>
+                                <p style="text-align: center;"><strike>
+                                        <script>
+                                            var x4 = parseInt(localStorage.getItem("otogia1")) * 1.3;
+                                            document.write("(" + x4 + " USD)");
+                                        </script> </strike></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <script>
+        $('#myForm').on('submit', function (e) {
+            $('#myModal').modal('show');
+            e.preventDefault();
+        });
+    </script>
+
+</body>
+
+</html>

@@ -235,8 +235,9 @@
             var carPrice = document.getElementById("carPrice").value;
             localStorage.setItem("price", carPrice);
             var namsx = document.querySelector('input[name="namsx"]:checked').value;
-
             localStorage.setItem("namsx", namsx);
+
+            
             var gia1 = Math.floor(carPrice * namsx *0.011);
             localStorage.setItem("gia1", gia1);
             var gia2 = Math.floor(carPrice * namsx *0.012);
@@ -245,11 +246,6 @@
             localStorage.setItem("gia3", gia3);
             var gia4 = Math.floor(carPrice * namsx *0.007);
             localStorage.setItem("gia4", gia4);
-
-            alert(localStorage.getItem("gia1") + ", " +localStorage.getItem("gia2"));
-
-           
-            
 
         })
     </script>
