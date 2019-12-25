@@ -13,7 +13,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
-<body style="background-color: lightskyblue;">
+<body style="background-image: url('wall1.jpg');background-attachment: fixed;">
     <!--Navbar below-->
     <div class="container-fluid">
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -54,31 +54,36 @@
     <!--Carousel below-->
     <img src="united_healthcare.jpg" style="width:100%; height: 50%;">
     <!--Jumbotron "About AXA" below-->
-    <div class="jumbotron" style="background-color: lightskyblue;">
-        <div class="row">
-            <div class="container col-md-1"></div>
-            <div class="container info col-md-10" style="background-color: whitesmoke; border: black solid thin; border-radius: 10px; padding: 10px; ">
-                <h2><strong>GENERAL INFORMATION ABOUT THE CORPORATION</strong></h2>
-                <p>
-                    - Corporation name: Unitedhealth Group.
-                    <br>
-                    - Founded: 1977.
-                    - Founder: Richard T. Burke
-                    <br>
-                    - Headquarters: Minessota, US.
-                    <br>
-                    - Phone: (024) 6276 5555 - Fax: (024) 6276 5556.
-                    <br>
-                    - UnitedHealth Group Incorporated is an American for-profit managed health care company based in Minnetonka, Minnesota. It offers health care products and insurance services. It is the largest healthcare company in the world by revenue, with 2018 revenue of $226.2 billion and 115 million customers.
-                </p>
-            </div>
-            <div class="col-md-1"></div>
+    <br><br><br><br><br><br><br>
+    <div>
+        <div class="col-md-1"></div>
+        <div class="jumbotron col-md-10"
+            style="background-color: whitesmoke; border: black solid thin; border-radius: 10px; padding: 10px;">
+            <h2><strong>GENERAL INFORMATION ABOUT THE CORPORATION</strong></h2>
+            <p>
+                - Corporation name: Unitedhealth Group.
+                <br>
+                - Founded: 1977.
+                - Founder: Richard T. Burke
+                <br>
+                - Headquarters: Minessota, US.
+                <br>
+                - Phone: (024) 6276 5555 - Fax: (024) 6276 5556.
+                <br>
+                - UnitedHealth Group Incorporated is an American for-profit managed health care company based in
+                Minnetonka, Minnesota. It offers health care products and insurance services. It is the largest
+                healthcare company in the world by revenue, with 2018 revenue of $226.2 billion and 115 million
+                customers.
+            </p>
         </div>
+        <div class="col-md-1"></div>
     </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <div class="container-fluid">
         <!--input information 4 wheels below-->
         <div class="container col-md-6">
-            <form class="form-inline" onsubmit="openModal()" id="myForm" style="background-color: whitesmoke; border: black solid thin; border-radius: 10px; padding: 10px; ">
+            <form class="form-inline" onsubmit="openModal()" id="myForm"
+                style="background-color: whitesmoke; border: black solid thin; border-radius: 10px; padding: 10px; ">
                 <h2><strong> Car's estimating insurance fee!</strong></h2>
                 <br><br>
                 <label>Car's price:</label>
@@ -113,7 +118,7 @@
                 <br><br>
                 <button type="submit" class="btn btn-danger">Estimate insurance fee</button>
             </form>
-        
+
             <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -123,7 +128,7 @@
                         </div>
                         <div class="modal-body">
                             <div class="container-fluid row " style="background-color: lightskyblue;">
-        
+
                                 <div
                                     style="background-color: whitesmoke; border: rgb(188, 216, 188) thin solid; border-radius: 5px; margin: 20px;padding-bottom: 20px;">
                                     <table>
@@ -154,7 +159,7 @@
                                     <div style="text-align: center;">
                                         <h2 class="discount">Price:
                                             <script>
-                                                 
+
                                             </script> USD
                                         </h2>
                                         <p style="text-align: center;"><strike>
@@ -164,7 +169,7 @@
                                                 </script> </strike></p>
                                     </div>
                                 </div>
-        
+
                             </div>
                         </div>
                         <div class="modal-footer">
@@ -173,7 +178,7 @@
                     </div><!-- /.modal-content -->
                 </div><!-- /.modal-dialog -->
             </div><!-- /.modal -->
-        
+
             <script>
                 $('#myForm').on('submit', function (e) {
                     $('#myModal').modal('show');
@@ -234,7 +239,7 @@
                 <br><br>
                 <button type="submit" class="btn btn-danger">Estimate insurance fee</button>
             </form>
-        
+
             <div class="modal fade" tabindex="-1" role="dialog" id="myModal1">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -244,7 +249,7 @@
                         </div>
                         <div class="modal-body">
                             <div class="container-fluid row " style="background-color: lightskyblue;">
-        
+
                                 <div
                                     style="background-color: whitesmoke; border: rgb(188, 216, 188) thin solid; border-radius: 5px; margin: 20px;padding-bottom: 20px;">
                                     <table>
@@ -283,7 +288,7 @@
                                                 </script> </strike></p>
                                     </div>
                                 </div>
-        
+
                             </div>
                         </div>
                         <div class="modal-footer">
@@ -292,15 +297,18 @@
                     </div><!-- /.modal-content -->
                 </div><!-- /.modal-dialog -->
             </div><!-- /.modal -->
-        
+
             <script>
                 $('#myForm1').on('submit', function (e1) {
                     $('#myModal1').modal('show');
                     e1.preventDefault();
                 });
             </script>
+            
         </div>
+       
     </div>
+    <br><br><br><br><br><br><br><br><br><br>
     <!--What our customers say-->
     <div class="container-fluid">
         <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
