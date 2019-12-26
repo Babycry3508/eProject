@@ -93,25 +93,25 @@
                 <br><br>
                 <label>Year of production:</label>
                 <br>
-                <input type="radio" value="1" name="namsxOtoAxa" required>2019
+                <input type="radio" value="1" name="carNamsx" required>2019
                 &nbsp;
-                <input type="radio" value="1.1" name="namsxOtoAxa">2018
+                <input type="radio" value="1.1" name="carNamsx">2018
                 &nbsp;
-                <input type="radio" value="1.2" name="namsxOtoAxa">2017
+                <input type="radio" value="1.2" name="carNamsx">2017
                 &nbsp;
-                <input type="radio" value="1.3" name="namsxOtoAxa">2016
+                <input type="radio" value="1.3" name="carNamsx">2016
                 &nbsp;
-                <input type="radio" value="1.4" name="namsxOtoAxa">2015
+                <input type="radio" value="1.4" name="carNamsx">2015
                 &nbsp;
-                <input type="radio" value="1.5" name="namsxOtoAxa">2014
+                <input type="radio" value="1.5" name="carNamsx">2014
                 &nbsp;
-                <input type="radio" value="1.6" name="namsxOtoAxa">2013
+                <input type="radio" value="1.6" name="carNamsx">2013
                 &nbsp;
-                <input type="radio" value="1.7" name="namsxOtoAxa">2012
+                <input type="radio" value="1.7" name="carNamsx">2012
                 &nbsp;
-                <input type="radio" value="1.8" name="namsxOtoAxa">2011
+                <input type="radio" value="1.8" name="carNamsx">2011
                 &nbsp;
-                <input type="radio" value="1.9" name="namsxOtoAxa">Before 2011
+                <input type="radio" value="1.9" name="carNamsx">Before 2011
                 <br><br>
                 <label>Enter phone number:</label>
                 <br>
@@ -159,15 +159,11 @@
                                     </div>
                                     <div style="text-align: center;">
                                         <h2 class="discount">Price:
-                                            <script>
-
-                                            </script> USD
+                                            <span id="giaOto"></span> USD
                                         </h2>
                                         <p style="text-align: center;"><strike>
-                                                <script>
-                                                    var x1 = giaOtoAxa * 1.3;
-                                                    document.write("(" + x1 + " USD)");
-                                                </script> </strike></p>
+                                                
+                                                <span id="insuDiscount"></span></strike></p>
                                     </div>
                                 </div>
 
@@ -182,6 +178,15 @@
 
             <script>
                 $('#myForm').on('submit', function (e) {
+                    var carPrice = document.getElementById("carPrice").value;
+                    var carNamsx = document.querySelector('input[name="carNamsx"]:checked').value;
+                    
+                    var insuOto = Math.floor(carPrice * carNamsx *0.013);
+                        document.getElementById("giaOto").innerHTML = insuOto;
+
+                    var insuDiscount = insuOto * 1.2;
+                        document.getElementById("insuDiscount").innerHTML = insuDiscount;
+
                     $('#myModal').modal('show');
                     e.preventDefault();
                 });
