@@ -154,12 +154,12 @@
                                         <div style="text-align: center;">
                                             <h2 class="discount">Price:
                                                 <script>
-
+                                                document.write(giaOtoAxa);   
                                                 </script> USD
                                             </h2>
                                             <p style="text-align: center;"><strike>
                                                     <script>
-                                                        var x1 = giaOtoAxa * 1.3;
+                                                        var x1 = giaOtoAxa * 1.1;
                                                         document.write("(" + x1 + " USD)");
                                                     </script> </strike></p>
                                         </div>
@@ -387,7 +387,19 @@
     </footer>
 
     <script>
+$("myForm").submit (function () { 
+           
+           var carPriceAxa = document.getElementById("carPriceAxa").value;
+           localStorage.setItem("carPriceAxa", carPriceAxa);
+           var carNamsxAxa = document.querySelector('input[name="namsxOtoAxa"]:checked').value;
+           localStorage.setItem("namsxOtoAxa", carNamsxAxa);
 
+           
+           var giaOtoAxa = Math.floor(carPriceAxa * carNamsxAxa *0.011);
+           localStorage.setItem("giaOtoAxa", giaOtoAxa);
+           
+
+       })
 
 
 
