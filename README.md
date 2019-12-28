@@ -15,7 +15,7 @@ Project title: Safecarz Limited
 
   Vu Dinh Thien - Student1233870
 
-Github repo: https://github.com/Babycry3508/eProject
+Github repo: https://github.com/Babycry3508/eProject/tree/master/Document
 ====================================================
 Github page: https://babycry3508.github.io/eProject/
 ====================================================
