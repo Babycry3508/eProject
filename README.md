@@ -12,11 +12,11 @@ Batch No.	T1.1910.M1.
 Group No.	1
 
 Team members:                    
-Dao Cong Duong (Team leader)	Student1225563
+Dao Cong Duong (Team leader)	
 
-Bui Quoc Tuan	                Student1233868
+Bui Quoc Tuan	 
 
-Vu Dinh Thien	                Student1233870
+Vu Dinh Thien	                
 
 
 Github repo: https://github.com/Babycry3508/eProject
