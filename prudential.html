@@ -195,7 +195,7 @@
                     var insuOto = Math.floor(carPrice * carNamsx *0.013);
                         document.getElementById("giaOto").innerHTML = insuOto;
 
-                    var insuDiscount = insuOto * 1.2;
+                    var insuDiscount = Math.floor(insuOto * 1.3);
                         document.getElementById("insuDiscount").innerHTML = insuDiscount;
 
                     $('#myModal').modal('show');
@@ -373,11 +373,7 @@
         <div class="footer row">
             <div class="col-md-1"></div>
             <div class="col-md-4">
-                <h3>QUICK LINKS</h3>
-                <p><a href="index.html">Home</a></p>
-                <p><a href="two_wheels.html">Two wheels</a></p>
-                <p><a href="four_wheels.html">Four wheels</a></p>
-                <p><a href="contact.html">Contact us</a></p>
+                <a href="about_us.html"><img src="logo.png" alt="" width="40%"></a>
             </div>
             <div class="col-md-4">
                 <H3>SOCIAL NETWORK</H3>
