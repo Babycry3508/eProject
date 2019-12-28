@@ -14,5 +14,5 @@ Order	Full name	                    Roll No.
 Github repo: https://github.com/Babycry3508/eProject
 Github page: https://babycry3508.github.io/eProject/
 
-Thank you for your time.
+Thanks for your time.
 Happy hollidays!
